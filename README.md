@@ -32,9 +32,9 @@ Develop a **robust NLP pipeline** for multilingual sentiment classification usin
 ## 📁 Project Structure
 
 /data/
-**train.csv**
-**val.csv**
-**test.csv**
+- **train.csv**
+- **val.csv**
+- **test.csv**
 /notebooks/
 **data_exploration.ipynb** - Dataset analysis, class distribution, sample exploration
 **model_training.ipynb** - Interactive model training and experimentation
