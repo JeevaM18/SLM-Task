@@ -46,6 +46,7 @@ Develop a **robust NLP pipeline** for multilingual sentiment classification usin
 - **data_preprocessing.py** - Text cleaning, tokenization, dataset preparation
 - **model_utils.py** - Model loading, saving, prediction utilities
 - **config.py** - Training hyperparameters and model configurations
+- **inference.py** - Can do prediction
 
 /models/
 - **trained_model/** - Fine-tuned model weights and configuration
@@ -61,9 +62,9 @@ Root Files
 - **requirements.txt** - Python dependencies (transformers, torch, datasets, etc.)
 - **README.md** - Project documentation (this file)
 - **submission.md** - Your approach, model decisions, and key learnings
-**train.py** - Simple training script entry point
-**.gitignore** - Files to exclude from git (models/, pycache, etc.)
-
+-- **train.py** - Simple training script entry point
+-- **.gitignore** - Files to exclude from git (models/, pycache, etc.)
+-- **app.py** - prediction pipeline using streamlit
 ---
 
 #  Setup Instructions
@@ -106,12 +107,26 @@ This project demonstrates:
 
 ---
 
+# 🚀 Inference & Deployment
+This project supports both command-line inference and web-based UI via Streamlit:
+
+**🔍 Inference via Python script**
+Run a quick prediction on a single input:
+<pre> python src/inference.py </pre>
+- The model loads from /models/trained_model/
+- Edit the test_input variable inside inference.py to try different texts
+- Output includes predicted label, confidence, and class-wise probabilities
+
+# 🌐 Deploy via Streamlit
+An interactive UI is available:
+<pre> streamlit run app.py </pre>
+- Paste any text input to get sentiment prediction
+- Behind the scenes, it uses the same inference.py pipeline
+
+---
+
 #  Future Enhancements
-Experiment with distilled models for speed (e.g., distilbert-multilingual)
-
-Use hyperparameter search with Optuna
-
-Add Explainable AI modules (e.g., LIME, SHAP)
-
-Deploy as a Streamlit or FastAPI app
+- Add multilingual input support in Streamlit app
+- Support batch inference on CSV uploads
+- Add explanations via SHAP/LIME in UI
 
