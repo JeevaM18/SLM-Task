@@ -35,26 +35,31 @@ Develop a **robust NLP pipeline** for multilingual sentiment classification usin
 - **train.csv**
 - **val.csv**
 - **test.csv**
+
 /notebooks/
-**data_exploration.ipynb** - Dataset analysis, class distribution, sample exploration
-**model_training.ipynb** - Interactive model training and experimentation
-**evaluation_analysis.ipynb** - Results analysis, error analysis, visualizations
+- **data_exploration.ipynb** - Dataset analysis, class distribution, sample exploration
+- **model_training.ipynb** - Interactive model training and experimentation
+- **evaluation_analysis.ipynb** - Results analysis, error analysis, visualizations
+
 /src/
-**train_model.py** - Main training script with Hugging Face Trainer
-**data_preprocessing.py** - Text cleaning, tokenization, dataset preparation
-**model_utils.py** - Model loading, saving, prediction utilities
-**config.py** - Training hyperparameters and model configurations
+- **train_model.py** - Main training script with Hugging Face Trainer
+- **data_preprocessing.py** - Text cleaning, tokenization, dataset preparation
+- **model_utils.py** - Model loading, saving, prediction utilities
+- **config.py** - Training hyperparameters and model configurations
+
 /models/
-**trained_model/** - Fine-tuned model weights and configuration
-**tokenizer/** - Trained tokenizer files
-**.gitkeep** - Maintains directory structure
+- **trained_model/** - Fine-tuned model weights and configuration
+- **tokenizer/** - Trained tokenizer files
+- **.gitkeep** - Maintains directory structure
+
 /reports/
-**model_report.md** - Model architecture decisions, training insights, improvements
-**evaluation_metrics.json** - Detailed metrics (F1, precision, recall, accuracy)
-**confusion_matrix.png** - Classification results visualization
+- **model_report.md** - Model architecture decisions, training insights, improvements
+- **evaluation_metrics.json** - Detailed metrics (F1, precision, recall, accuracy)
+- **confusion_matrix.png** - Classification results visualization
+
 Root Files
-**requirements.txt** - Python dependencies (transformers, torch, datasets, etc.)
-**README.md** - Project documentation (this file)
-**submission.md** - Your approach, model decisions, and key learnings
+- **requirements.txt** - Python dependencies (transformers, torch, datasets, etc.)
+- **README.md** - Project documentation (this file)
+- **submission.md** - Your approach, model decisions, and key learnings
 **train.py** - Simple training script entry point
 **.gitignore** - Files to exclude from git (models/, pycache, etc.)
