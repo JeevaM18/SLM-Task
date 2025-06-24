@@ -68,33 +68,49 @@ Root Files
 
 #  Setup Instructions
 1. Environment Setup
-bash
-Copy
-Edit
-pip install -r requirements.txt
-If running into tokenizer issues:
+<pre> ```bash pip install -r requirements.txt ``` </pre>
 
-bash
-Copy
-Edit
-pip install sentencepiece
+If running into tokenizer issues:
+<pre> ```bash pip install sentencepiece ``` </pre>
 
 2. Preprocess & Tokenize
 bash
 Copy
 Edit
 python src/data_preprocessing.py
-
-4. Train the Model
+3. Train the Model
 bash
 Copy
 Edit
 python src/train_model.py
-
-6. Evaluate
+4. Evaluate
 Evaluation results (F1, accuracy, precision, recall) are logged and saved in:
 
 reports/evaluation_metrics.json
 
 reports/confusion_matrix.png
+
+🧪 Metrics (Example)
+Metric	Score
+Accuracy	60.2%
+F1 Score	60.3%
+Precision	61.5%
+Recall	60.2%
+
+🎯 Design Philosophy
+This project demonstrates:
+
+✅ Sound technical foundations: Hugging Face Transformers, PyTorch, clean modular design.
+✅ Maintainability: Each file has a single responsibility, following industry conventions.
+✅ Resourcefulness: Combines Hugging Face datasets, Trainer, and visual evaluation tools.
+✅ Design trade-offs: Lightweight BERT models were preferred over heavier multilingual models to balance performance and training time.
+
+💡 Future Enhancements
+Experiment with distilled models for speed (e.g., distilbert-multilingual)
+
+Use hyperparameter search with Optuna
+
+Add Explainable AI modules (e.g., LIME, SHAP)
+
+Deploy as a Streamlit or FastAPI app
 
