@@ -68,3 +68,11 @@ To build a robust text classification pipeline capable of handling multilingual 
 * Developed a modular, maintainable ML pipeline that supports scaling
 
 ---
+
+# ✅ Inference and UI
+We added a real-time inference pipeline with two modes:
+
+- inference.py: Lightweight script that loads the trained Hugging Face model and tokenizer, predicts sentiment, and prints a detailed JSON response with label confidence.
+- app.py: A Streamlit-based interface where users can type or paste text and get instant predictions.
+
+This ensures our model is easily testable, developer-friendly, and end-user ready.
