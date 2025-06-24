@@ -63,3 +63,38 @@ Root Files
 - **submission.md** - Your approach, model decisions, and key learnings
 **train.py** - Simple training script entry point
 **.gitignore** - Files to exclude from git (models/, pycache, etc.)
+
+---
+
+#  Setup Instructions
+1. Environment Setup
+bash
+Copy
+Edit
+pip install -r requirements.txt
+If running into tokenizer issues:
+
+bash
+Copy
+Edit
+pip install sentencepiece
+
+2. Preprocess & Tokenize
+bash
+Copy
+Edit
+python src/data_preprocessing.py
+
+4. Train the Model
+bash
+Copy
+Edit
+python src/train_model.py
+
+6. Evaluate
+Evaluation results (F1, accuracy, precision, recall) are logged and saved in:
+
+reports/evaluation_metrics.json
+
+reports/confusion_matrix.png
+
