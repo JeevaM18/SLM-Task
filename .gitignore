@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+models/
+!models/.gitkeep
+data/tokenized_*.csv
+*.log
+*.tmp
+*.bak
+.env
+*.env
+.vscode/
+.DS_Store
+Thumbs.db

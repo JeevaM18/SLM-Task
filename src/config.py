@@ -1,0 +1,9 @@
+MODEL_NAME = "bert-base-multilingual-cased"
+NUM_LABELS = 3
+MAX_LENGTH = 128
+EPOCHS = 3
+BATCH_SIZE = 8
+LEARNING_RATE = 2e-5
+WEIGHT_DECAY = 0.01
+OUTPUT_DIR = "../models/trained_model"
+TOKENIZER_DIR = "../models/tokenizer"
