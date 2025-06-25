@@ -122,6 +122,9 @@ An interactive UI is available:
 <pre> streamlit run app.py </pre>
 - Paste any text input to get sentiment prediction
 - Behind the scenes, it uses the same inference.py pipeline
+![{7986A983-E76B-463E-A386-52ACAD7BA2F1}](https://github.com/user-attachments/assets/6d9becbd-602f-4ecb-9ff7-e558ed3abcb3)
+![{15F6F268-5C2A-4A21-86F9-8CF9F7BDEEB0}](https://github.com/user-attachments/assets/afe22ba0-e491-4f29-98ff-ffd59d41edef)
+
 
 ---
 
